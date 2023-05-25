@@ -75,8 +75,8 @@ module.exports = {
         use: "babel-loader", //loader which we are going to use
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader", "postcss-loader"],
       },
     ],
   },
