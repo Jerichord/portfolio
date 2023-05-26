@@ -4,6 +4,8 @@ module.exports = {
     extend: {
       colors: {
         primary: "#1B73E8",
+        "bookmark-white": "#f7f7f7",
+        "bookmark-grey": "#9194A2",
       },
     },
     fontFamily: {
@@ -11,7 +13,7 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: "1rem",  
+      padding: "1rem",
       screens: {
         lg: "1124px",
         xl: "1124px",
