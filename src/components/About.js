@@ -1,54 +1,49 @@
 import React from "react";
-import "./About.css";
 
 export default function About() {
   return (
-    <div class="relative isolate px-6 pt-14 lg:px-8">
-      <div class="mx-auto max-w-7xl py-10 sm:pt-48">
-        <div class="text-center">
-          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Aiming to write code that will serve a need, no matter how big or
-            small.
-          </h1>
-          <p class="mt-6 text-lg leading-8 text-gray-600">
-            Hi, I am Jericho, a person who loves learning about all aspects of
-            applications, especially in an ecosystem where there are so many
-            ways to make and improve what we create. I have not limited myself
-            to a specific discipline and have put my foot in various
-            environments to get experience I need. Now, my goal is to maximize
-            my knowledge of engineering so that I can offer as much value to the
-            creation process as possible.
+    <section class="relative">
+      <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h2 class="text-gray-900 font-bold text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
+            About Me
+          </h2>
+          <p class="text-bookmark-grey text-lg text-center lg:text-left mb-6">
+            I started my development journey the summer of my sophmore year in
+            undergrad through a web development course, and I have not looked
+            back since. I graduated UC Davis with a Degree in Computer
+            Engineering, and although I loved the concepts I learned, the more
+            classes I took in software after web development, the more I felt
+            the joy of concepts clicking, and how deep the iceberg went in terms
+            of what applications can contain. Now, I am continuing my journey
+            learning through peers and personal endeavors.
           </p>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="#" class="btn">
-              View Resume
-            </a>
-            <a href="#" class="btn">
-              Contact Me
-            </a>
-          </div>
+        </div>
+        <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+          <img
+            class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full rounded-lg"
+            src="./images/jeri.jpg"
+            alt=""
+          />
         </div>
       </div>
-    </div>
+      <div
+        class="
+      hidden
+      md:block
+      overflow-hidden
+      bg-violet-950
+      rounded-l-full
+      absolute
+      h-120
+      w-2/4
+      top-32
+      right-0
+      lg:
+      -bottom-28
+      lg:-right-36
+    "
+      ></div>
+    </section>
   );
-}
-
-{
-  /* <div id="section">
-<div id="content">
-  <h1 id="intro" className="text-primary text-4xl font-bold">
-    Aiming to write code that will serve a need, no matter how big or
-    small.
-  </h1>
-  <p id="aboutDesc">
-    I am a person who loves learning about all aspects of applications,
-    especially in an ecosystem where there are so many ways to make and
-    improve what we create. I have not limited myself to a specific
-    discipline and have put my foot in various environments to get
-    experience I need. Now, my goal is to maximize my knowledge of
-    engineering so that I can offer as much value to the creation process
-    as possible.
-  </p>
-</div>
-</div> */
 }

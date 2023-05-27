@@ -9,8 +9,8 @@ export default function Works() {
         <h1 class="text-5xl font-bold tracking-tight text-gray-900 text-center">
           Works
         </h1>
-        <p class="mt-6 text-lg leading-8 text-gray-600 text-center">
-          Here are some of the things I have worked on
+        <p class="mt-6 text-lg leading-8 text-bookmark-grey text-center">
+          Here are things I have worked on
         </p>
       </div>
       {/* projects */}
@@ -32,7 +32,7 @@ export default function Works() {
         desc="Developed code for the SciCam App and Thorlabs Machine. Took a nonfunctioning focus feature
         and implemented a working version using Euclidean Distance. Further optimized code to use less than 1/4 of
         the original iterations by debugging code and finding bottleneck. Read SDK of thorlabs to transfer DLLs so that new machine
-        could be operated with visual basic."
+        could be operated with visual basic. First chance at working on a large codebase and realizing communication is key in reaching desired product."
         tech="Visual Basic/DSA/Image Processing/OOP/git"
         altImage="App showing scan of cell"
         image="./images/pathology.png"
@@ -70,7 +70,8 @@ export default function Works() {
       />
       <Project
         title="This Portfolio"
-        desc="Aimed to make a more modern looking application using modern frameworks that I have been learning on the side."
+        desc="Aimed to make a more modern looking application using modern frameworks that I have been learning on the side. 
+        Gave experience using another front end styling framework and experience with React."
         tech="React/Tailwind/HTML/CSS/JS"
         altImage="portfolio website"
         image="./images/portfolio_filler.png"
@@ -82,7 +83,8 @@ export default function Works() {
       <Project
         title="Guest Form Component"
         desc="Completed exercise aiming to use Ruby on Rails and React to make a modern-looking
-        component that succesfully validated and sent to SQL server."
+        component that succesfully validated and sent to SQL server. Helped me understand different tech stack
+        and a chance at developing a decent looking component."
         tech="Ruby on Rails/SQL/React"
         altImage="Guest component with Username and email field"
         image="./images/guest.png"
@@ -94,7 +96,8 @@ export default function Works() {
       <Project
         title="Autonomous Vehicle Code"
         desc="For different autonomous vehicle projects, developed code including line-tracking,
-        object detection and sound detection."
+        object detection and sound detection. Gave experience with embedded devices and setting 
+        up code that communicates between devices."
         tech="Python/C/Circuits/Oscilloscope"
         altImage="mini car with breadboard containing sound system"
         image="./images/vehicle.jpg"
@@ -102,6 +105,19 @@ export default function Works() {
         reverse={false}
         techColor="text-rose-950"
         bgColor="bg-rose-950"
+      />
+      <Project
+        title="UDP Congestion Control"
+        desc="Project which solidified networking concepts and reliable delivery service through using different methods
+        to send/receive packets using UDP sockets. Important since this was a project which I had to whiteboard out since
+        there was nothing to visualize the whole process except data and book knowledge."
+        tech="Python/UDP/TCP"
+        altImage="diagram showing"
+        image="./images/data_transfer.png"
+        isFirst={false}
+        reverse={true}
+        techColor="text-black"
+        bgColor="bg-black"
       />
     </section>
   );

@@ -36,7 +36,7 @@ export default function Project({
           <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl ">
             {title}
           </h1>
-          <p class="my-4 text-center lg:text-left sm:w-3/4 lg:w-full text-gray-600">
+          <p class="my-4 text-center lg:text-left sm:w-3/4 lg:w-full text-bookmark-grey">
             {desc}
           </p>
         </div>
