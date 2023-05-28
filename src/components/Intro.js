@@ -1,10 +1,12 @@
 import React from "react";
-import "./Intro.css";
 
 export default function Intro() {
   return (
-    <div class="relative isolate px-6 pt-14 lg:px-8 bg-bookmark-white">
-      <div class="mx-auto max-w-7xl py-10 sm:pt-48">
+    <div
+      class="relative isolate px-6 pt-14 lg:px-8 bg-bookmark-white"
+      id="intro"
+    >
+      <div class="mx-auto max-w-7xl py-28 sm:pt-40">
         <div class="text-center">
           <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Aiming to write code that will serve a need, no matter how big or
@@ -19,6 +21,7 @@ export default function Intro() {
           </p>
         </div>
       </div>
+      <div id="about"></div>
     </div>
   );
 }

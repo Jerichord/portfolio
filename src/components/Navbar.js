@@ -1,27 +1,47 @@
 import React from "react";
-import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <nav>
-      <ul>
-        <div>
-          <li>Jericho</li>
-          <li>Referente</li>
-        </div>
-        <div>
-          <li>About</li>
-          <li>Works</li>
-          <li>Contact</li>
-          <li>
-            {" "}
-            <a href="./resume.pdf" target="_blank" rel="noopener noreferrer">
-              Resume
-            </a>
-          </li>
-        </div>
-      </ul>
-    </nav>
+    <div class="mx-auto py-5 sm:pd-20 sticky top-0 z-50 bg-white">
+      <nav class="max-w-7xl mx-auto">
+        <ul class="flex items-center font-bold">
+          <div>
+            <li>
+              <a href="#intro" class="hover:opacity-50 text-2xl">
+                Jericho.Referente
+              </a>
+            </li>
+          </div>
+          <div class="flex justify-end ml-auto gap-12">
+            <li>
+              <a href="#about" class="hover:opacity-50">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#works" class="hover:opacity-50">
+                Works
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:opacity-50">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="./resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:opacity-50"
+              >
+                Resume
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
   );
 }
 

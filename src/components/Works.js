@@ -3,7 +3,7 @@ import Project from "./Project";
 
 export default function Works() {
   return (
-    <section class="bg-bookmark-white py-20 mb-20 lg:mt-40">
+    <section class="bg-bookmark-white py-20 mb-20 lg:mt-40" id="works">
       {/* heading */}
       <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
         <h1 class="text-5xl font-bold tracking-tight text-gray-900 text-center">
