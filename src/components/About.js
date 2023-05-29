@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 export default function About() {
   const { ref: testRef, inView: testView } = useInView({
     triggerOnce: true,
-    threshold: 0.7,
+    threshold: 0.2,
   });
   return (
     <section class="relative">
