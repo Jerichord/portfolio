@@ -86,7 +86,7 @@ export default function Works() {
         title="This Portfolio"
         desc="Aimed to make a more modern looking application using modern frameworks that I have been learning on the side. 
         Gave experience using another front end styling framework and experience with React."
-        tech="React/Tailwind/HTML/CSS/JS"
+        tech="React/Tailwind/HTML/CSS/JS/Webpack/Babel"
         altImage="portfolio website"
         image="./images/portfolio_filler.png"
         isFirst={false}
