@@ -7,6 +7,9 @@ module.exports = {
         "bookmark-white": "#f7f7f7",
         "bookmark-grey": "#9194A2",
       },
+      spacing: {
+        '120': "28rem",
+      },
     },
     fontFamily: {
       Poppins: ["Poppins, sans-serif"],
@@ -21,5 +24,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };

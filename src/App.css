@@ -4,14 +4,50 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
-.btn {
+.onScreen {
+  @apply animate-in fade-in delay-100 duration-1000;
+}
+
+.outScreen {
+  @apply invisible;
+}
+
+.slideFromRight {
+  @apply animate-in slide-in-from-right delay-200 duration-1000;
+}
+
+.slideFromLeft {
+  @apply animate-in slide-in-from-left fade-in delay-200 duration-1000;
+}
+
+/* .btn {
   @apply rounded-md bg-indigo-600 px-6 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
 }
 
-/* .project-left {
-
+.rectBigNoAnim {
+  @apply hidden md:block overflow-hidden bg-violet-950 rounded-l-full absolute h-120 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-36;
 }
 
-.project-right {
+.rectBigAnim {
+  @apply hidden md:block overflow-hidden bg-violet-950 rounded-l-full absolute h-120 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-36 animate-in slide-in-from-right delay-1000 duration-1000;
+}
+
+.rectSmallNoAnim {
+}
+
+.rectSmallAnim {
+}
+
+.picNoAnim {
+  @apply flex flex-1 justify-center z-10 mb-10 lg:mb-0 invisible;
+}
+
+.picAnim {
+  @apply flex flex-1 justify-center z-10 mb-10 lg:mb-0 animate-in slide-in-from-right delay-1000 duration-1000;
+}
+
+.bigPicNoAnim {
 
 } */
+
+/* animate-in slide-in-from-right delay-1000 duration-1000 */

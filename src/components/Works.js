@@ -1,16 +1,26 @@
 import React from "react";
 import Project from "./Project";
+import { useInView } from "react-intersection-observer";
 
 export default function Works() {
+  const { ref: workRef, inView: workView } = useInView({
+    triggerOnce: true,
+    threshold: 1,
+  });
+
   return (
     <section class="bg-bookmark-white py-20 mb-20 lg:mt-40" id="works">
       {/* heading */}
-      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-        <h1 class="text-5xl font-bold tracking-tight text-gray-900 text-center">
+      <div ref={workRef} class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1
+          class={`text-5xl font-bold tracking-tight text-gray-900 text-center ${
+            workView ? "onScreen" : "outScreen"
+          }`}
+        >
           Works
         </h1>
         <p class="mt-6 text-lg leading-8 text-bookmark-grey text-center">
-          Here are things I have worked on
+          Here are things I have worked on {workView ? "yes" : "no"}
         </p>
       </div>
       {/* projects */}
