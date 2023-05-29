@@ -19,8 +19,12 @@ export default function Works() {
         >
           Works
         </h1>
-        <p class="mt-6 text-lg leading-8 text-bookmark-grey text-center">
-          Here are things I have worked on {workView ? "yes" : "no"}
+        <p
+          class={`mt-6 text-lg leading-8 text-bookmark-grey text-center ${
+            workView ? "onScreen" : "outScreen"
+          }`}
+        >
+          Here are things I have worked on
         </p>
       </div>
       {/* projects */}

@@ -1,9 +1,19 @@
-import React, {useState, useRef} from "react";
+import React, { useState, useRef } from "react";
+import { useInView } from "react-intersection-observer";
 
 export default function Footer() {
+  const { ref: footRef, inView: footView } = useInView({
+    triggerOnce: true,
+    threshold: 0.7,
+  });
+
   return (
-    <section class=" pb-20  lg:mt-40" id="contact">
-      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+    <section ref={footRef} class=" pb-20 lg:mt-40 slideFromBottom" id="contact">
+      <div
+        class={`sm:w-3/4 lg:w-5/12 mx-auto px-2 ${
+          footView ? "onScreen" : "outScreen"
+        }`}
+      >
         <h1 class="text-5xl font-bold tracking-tight text-gray-900 text-center">
           Get in Touch
         </h1>
@@ -12,7 +22,11 @@ export default function Footer() {
         </p>
       </div>
       <div class="mt-6">
-        <ul class="flex items-center justify-center mx-auto gap-12">
+        <ul
+          class={`flex items-center justify-center mx-auto gap-12 ${
+            footView ? "slideFromBottom" : "outScreen"
+          }`}
+        >
           <li>
             <a
               href="https://github.com/Jerichord"

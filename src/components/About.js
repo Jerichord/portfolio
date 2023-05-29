@@ -4,11 +4,14 @@ import { useInView } from "react-intersection-observer";
 export default function About() {
   const { ref: testRef, inView: testView } = useInView({
     triggerOnce: true,
-    threshold: 1,
+    threshold: 0.7,
   });
   return (
-    <section ref={testRef} class="relative">
-      <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
+    <section class="relative">
+      <div
+        ref={testRef}
+        class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28"
+      >
         <div class="flex flex-1 flex-col items-center lg:items-start">
           <h2
             class={`text-gray-900 font-bold text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6 ${
@@ -63,7 +66,6 @@ export default function About() {
       ${testView ? "slideFromRight" : "outScreen"}
       `}
       ></div>
-      {/* <div id="placeholder" ref={testRef}></div> */}
     </section>
   );
 }

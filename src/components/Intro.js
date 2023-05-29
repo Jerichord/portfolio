@@ -5,6 +5,7 @@ export default function Intro() {
   const { ref: introRef, inView: introView } = useInView({
     triggerOnce: true,
   });
+
   return (
     <div
       class="relative isolate px-6 pt-14 lg:px-8 bg-bookmark-white"
@@ -33,24 +34,4 @@ export default function Intro() {
       <div id="about"></div>
     </div>
   );
-}
-
-{
-  /* <div id="section">
-<div id="content">
-  <h1 id="intro" className="text-primary text-4xl font-bold">
-    Aiming to write code that will serve a need, no matter how big or
-    small.
-  </h1>
-  <p id="aboutDesc">
-    Hi, I am Jericho, a person who loves learning about all aspects of
-            applications, especially in an ecosystem where there are so many
-            ways to make and improve what we create. I have not limited myself
-            to a specific discipline and have put my foot in various
-            environments to get experience I need. Now, my goal is to maximize
-            my knowledge of engineering so that I can offer as much value to the
-            creation process as possible.
-  </p>
-</div>
-</div> */
 }

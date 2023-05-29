@@ -13,8 +13,8 @@ export default function Project({
   bgColor,
 }) {
   const { ref: projectRef, inView: projectView } = useInView({
-    triggerOnce: false,
-    threshold: 1,
+    triggerOnce: true,
+    threshold: 0.7,
   });
 
   return (
@@ -75,7 +75,6 @@ export default function Project({
                 : "outScreen"
             }`}
           ></div>
-          {/* <div id="placeHolder" ref={projectRef}></div> */}
         </div>
       </div>
     </div>

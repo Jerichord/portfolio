@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <div class="mx-auto py-5 sm:pd-20 sticky top-0 z-50 bg-white">
-      <nav class="max-w-7xl mx-auto">
+    <div class="mx-auto py-5 sm:pd-20 sticky top-0 z-50 bg-white slideFromTop">
+      <nav class="max-w-7xl mx-auto sm:px-12">
         <ul class="flex items-center font-bold">
           <div>
             <li>
@@ -12,7 +12,7 @@ export default function Navbar() {
               </a>
             </li>
           </div>
-          <div class="flex justify-end ml-auto gap-12">
+          <div class="flex justify-end ml-auto gap-12 ">
             <li>
               <a href="#about" class="hover:opacity-50">
                 About
