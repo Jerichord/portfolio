@@ -79,7 +79,7 @@ export default function Navbar() {
         </ul>
         {/* mobile menu */}
         {isMobileMenuOpen && (
-          <div class="sm:hidden items-center font-bold bg-white text-center slideFromTop">
+          <div class="sm:hidden items-center font-bold bg-white text-center">
             <ul class="mt-6">
               <li class="pb-4">
                 <a
