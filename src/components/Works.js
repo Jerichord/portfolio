@@ -29,6 +29,19 @@ export default function Works() {
       </div>
       {/* projects */}
       <Project
+        title="Broadcom"
+        desc="Developed automation scripts using internal frameworks to reproduce test scenarios and create reusable code with
+         the team. Built helper scripts to streamline processes and improve automation. Contributed to release cycles with automated
+          tests, suite analysis, and troubleshooting. Hands-on experience with 802.11 protocols and testing APs to validate standards"
+        tech="Python/Gerrit/802.11"
+        altImage="Broadcom Logo"
+        image="./images/broadcom.png"
+        isFirst={true}
+        reverse={false}
+        techColor="text-red-600"
+        bgColor="bg-red-500"
+      />
+      <Project
         title="Protempis"
         desc="Developed code for the GM200 product. Used knowledge of web development to fix issues in Web UI. 
       Using experience in software concepts, took on issues related to CLI and understand networking/ development flow.
@@ -36,8 +49,8 @@ export default function Works() {
         tech="Python/C/Jquery/HTML/CSS/JS/PHP/XML/JIRA/git"
         altImage="Protempis Logo"
         image="./images/protempis.png"
-        isFirst={true}
-        reverse={false}
+        isFirst={false}
+        reverse={true}
         techColor="text-sky-500"
         bgColor="bg-sky-500"
       />
@@ -51,7 +64,7 @@ export default function Works() {
         altImage="App showing scan of cell"
         image="./images/pathology.png"
         isFirst={false}
-        reverse={true}
+        reverse={false}
         techColor="text-indigo-500"
         bgColor="bg-indigo-500"
       />
@@ -64,7 +77,7 @@ export default function Works() {
         altImage="daviScout website"
         image="./images/daviscout.png"
         isFirst={false}
-        reverse={false}
+        reverse={true}
         techColor="text-gray-800"
         bgColor="bg-gray-800"
       />
@@ -78,7 +91,7 @@ export default function Works() {
         altImage="Website for Security Camera"
         image="./images/CC3200.png"
         isFirst={false}
-        reverse={true}
+        reverse={false}
         techColor="text-violet-700"
         bgColor="bg-violet-700"
       />
@@ -90,7 +103,7 @@ export default function Works() {
         altImage="portfolio website"
         image="./images/portfolio_filler.png"
         isFirst={false}
-        reverse={false}
+        reverse={true}
         techColor="text-cyan-800"
         bgColor="bg-cyan-800"
       />
@@ -103,7 +116,7 @@ export default function Works() {
         altImage="Guest component with Username and email field"
         image="./images/guest.png"
         isFirst={false}
-        reverse={true}
+        reverse={false}
         techColor="text-emerald-800"
         bgColor="bg-emerald-800"
       />
@@ -116,7 +129,7 @@ export default function Works() {
         altImage="mini car with breadboard containing sound system"
         image="./images/vehicle.jpg"
         isFirst={false}
-        reverse={false}
+        reverse={true}
         techColor="text-rose-950"
         bgColor="bg-rose-950"
       />
@@ -129,7 +142,7 @@ export default function Works() {
         altImage="diagram showing"
         image="./images/data_transfer.png"
         isFirst={false}
-        reverse={true}
+        reverse={false}
         techColor="text-black"
         bgColor="bg-black"
       />
